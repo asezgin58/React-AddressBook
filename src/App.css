@@ -1,21 +1,141 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+}
+
+main{
+  border: 1px solid dodgerblue;
+  border-radius: 20px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+hr{
+  border: 1px solid dodgerblue;
+}
+
+.addresses{
+  padding: 1%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-span{
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  font-weight: bold;
+
+}
+.div-span span{
+  margin: 2%;
+}
+
+.form-input{
+   flex-grow: 1;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: flex-start;
+   margin: 1%;
+ }
+.form-input input{
+  margin: 1%;
+  width: 50%;
+  padding: 1%;
+  border-radius: 20px;
+}
+
+.list hr{
+  border: 1px solid orange;
+}
+
+.address-list{
+  padding: 1%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.address-list-span{
+  flex-grow:2;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  font-weight: bold;
+  margin: 1%;
+}
+
+.address-list-content{
+  flex-grow:2;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  color: greenyellow;
+}
+
+.address-list-btn{
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  padding: 1%;
+}
+
+.address-list-btn button{
+  margin: 2%;
+  padding: 2% 3%;
+}
+
+.btn-add{
+  padding: 1% 3%;
+  border: 2px solid white;
+  border-radius: 20px;
+  background: greenyellow;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-edit{
+  padding: 1% 5%;
+  border: 2px solid white;
+  border-radius: 20px;
+  background: dodgerblue;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.btn-delete{
+  padding: 1% 5%;
+  border: 2px solid white;
+  border-radius: 20px;
+  background: red;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 10vmin;
+  margin: 1% 1% 0 1%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  font-size: calc(10px + 1vmin);
+
+  font-weight: bold;
 }
 
 .App-link {
