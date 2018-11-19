@@ -107,6 +107,12 @@ class AddressList extends Component {
             list: newList
         })
 
+        this.props.removeAndUpdate(item);
+
+    }
+
+    removeAndUpdate=()=>{
+
     }
 
     renderList() {

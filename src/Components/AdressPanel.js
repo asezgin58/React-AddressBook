@@ -40,6 +40,16 @@ class AdressPanel extends Component {
         })
     }
 
+    removeAndUpdate = (item)=>{
+
+        let newList = this.state.addressList.filter(f => f.phone !== item.phone);
+
+        this.setState({
+            addressList: newList
+        })
+
+    }
+
     render() {
         console.log(this.state)
         return (
@@ -63,7 +73,7 @@ class AdressPanel extends Component {
                 <div>
                     <button className="btn-add" onClick={() => this.addAddress()}>Add</button>
                 </div>
-                <AddressList addressList={this.state.addressList}/>
+                <AddressList addressList={this.state.addressList} removeAndUpdate={this.removeAndUpdate}/>
 
             </React.Fragment>
         );
